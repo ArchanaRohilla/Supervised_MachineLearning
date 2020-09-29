@@ -1,5 +1,12 @@
 # Supervised Machine Learning
 
+## Project Overview
+Personal lending is growing faster than credit card, auto, mortgage, and even student debt. With such incredible growth, 
+FinTech firms are storming ahead of traditional loan processes. By using the latest machine learning techniques, 
+these FinTech firms can continuously analyze large amounts of data and predict trends to optimize lending.
+
+
+
 - Credit risk is an inherently unbalanced classification problem, as the number of good loans easily
   outnumber the number of risky loans. Therefore, we need to employ different techniques to train
   and evaluate models with unbalanced classes. The following techniques have been used in this analysis
