@@ -9,7 +9,7 @@ Being able to predict credit risk with machine learning algorithms can help bank
 reduce risk cases, monitor portfolios, and provide recommendations on what to do in cases of fraud.
 
 ## Tools and Techniques
-Python, logistic regression, decision tree, random forest, support vector machine algorithms, ensemble and resampling techniques 
+Python, numpy, scikit-learn, tensorflow, logistic regression, decision tree, random forest, support vector machine algorithms, ensemble and resampling techniques 
 
 ## Summary of Analysis
 - Credit risk is an inherently unbalanced classification problem, as the number of good loans easily
