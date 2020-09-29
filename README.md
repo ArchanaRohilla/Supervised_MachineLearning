@@ -12,12 +12,26 @@ reduce risk cases, monitor portfolios, and provide recommendations on what to do
 Python, numpy, scikit-learn, tensorflow, logistic regression, decision tree, random forest, support vector machine algorithms, ensemble and resampling techniques 
 
 ## Summary of Analysis
-- Credit risk is an inherently unbalanced classification problem, as the number of good loans easily
+Credit risk is an inherently unbalanced classification problem, as the number of good loans easily
   outnumber the number of risky loans. Therefore, we need to employ different techniques to train
   and evaluate models with unbalanced classes. The following techniques have been used in this analysis
   to access the credit risk, using data from LendingClub; a peer-to-peer lending services company.
 
-- Oversampling the data using the RandomOverSampler and SMOTE algorithms.
+1. Oversampling the data using the RandomOverSampler and SMOTE algorithms.
+
+### Naive Random Oversampling
+
+![alt text]()
+
+The accuracy score is 0.63 which means that the model is correct 63% of the time. From the imbalanced classification report, the precision is 1 for low-risk(majority class) and 0.01 for high-risk(minority class) loans which is not a good value to rely upon. The recall for high-risk loans is slightly better than the low-risk loans but F1 score is very poor for the high-risk loans. Hence, this model is not a good predictor to assess the credit risk.
+
+
+
+
+### SMOTE Oversampling
+
+![alt text]()
+
 	- As per the analysis, these Oversampling models  are not suitable for accessing the credit risk.
 	
 - Undersampling the data using the cluster centroids algorithm.
