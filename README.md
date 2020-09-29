@@ -21,7 +21,7 @@ Credit risk is an inherently unbalanced classification problem, as the number of
 
 ### Naive Random Oversampling
 
-![alt text]()
+![alt text](https://github.com/ArchanaRohilla/Supervised_MachineLearning/blob/master/images/random_sampler.png)
 
 The accuracy score is 0.63 which means that the model is correct 63% of the time. From the imbalanced classification report, the precision is 1 for low-risk(majority class) and 0.01 for high-risk(minority class) loans which is not a good value to rely upon. The recall for high-risk loans is slightly better than the low-risk loans but F1 score is very poor for the high-risk loans. Hence, this model is not a good predictor to assess the credit risk.
 
