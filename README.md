@@ -20,6 +20,7 @@ Credit risk is an inherently unbalanced classification problem, as the number of
 ## Oversampling the data using the RandomOverSampler and SMOTE algorithms.
 
 ### Naive Random Oversampling
+Classication Report
 
 ![alt text](https://github.com/ArchanaRohilla/Supervised_MachineLearning/blob/master/images/random_sampler.png)
 
@@ -34,20 +35,20 @@ The accuracy score is 0.63 which means that the model is correct 63% of the time
 
 The accuracy score is 0.66 which means that the model is correct 66% of the time. From the imbalanced classification report, the precision is 1 for low-risk(majority class) and 0.01 for high-risk(minority class) loans which is not a good value to rely upon. The recall for high-risk loans is nearly equal to the low-risk loans but F1 score is very poor for the high-risk loans. Hence, this model is also not a good predictor to assess the credit risk.
 
-
-- As per the analysis, these Oversampling models  are not suitable for accessing the credit risk.
+As per the analysis, these Oversampling models  are not suitable for accessing the credit risk.
 	
+
 ## Undersampling the data using the cluster centroids algorithm.
-	- As per the analysis, cluster centroids algorithm is also not suitable for accessing the 
+As per the analysis, cluster centroids algorithm is also not suitable for accessing the 
 	  credit risk.
 
 ## Use a combination approach with the SMOTEENN algorithm.
-	- This model is also not a good predictor to assess the credit risk. But this model is
+This model is also not a good predictor to assess the credit risk. But this model is
 	  better in terms of recall as compared to the above models. This model may be used if we give 
 	  more weightage to the recall for high-risk loans.
 
 ## Ensemble classifiers i.e. "Balanced Random Forest Classifier" and "Easy Ensemble Classifier"
-	- Out of these two classifiers, in Easy Ensemble Classifier, the recall for both high-risk loans
+Out of these two classifiers, in Easy Ensemble Classifier, the recall for both high-risk loans
 	  and the low-risk loans is very high. Although F1 score is 0.16, but it is better than all the 
 	  above models for the high-risk loans. Hence, this model may be used to assess the credit risk 
 	  bit it is still not a good predictor. 
