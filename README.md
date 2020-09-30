@@ -17,6 +17,7 @@ Credit risk is an inherently unbalanced classification problem, as the number of
   and evaluate models with unbalanced classes. The following techniques have been used in this analysis
   to access the credit risk, using data from LendingClub; a peer-to-peer lending services company.
 
+## Comparison Chart
 
 ![alt text](images/comparison.png)
 
@@ -44,7 +45,3 @@ The accuracy score is 0.77 which means that the model is correct 77% of the time
 ### Easy Ensemble Classifier
 The accuracy score is 0.93 which means that the model is correct 93% of the time. From the imbalanced classification report, the precision is 1 for low-risk(majority class) and 0.09 for high-risk(minority class) loans which is not a good value to rely upon. The recall for both high-risk loans and the low-risk loans is very high. Although F1 score is 0.16, but it is better than all the above models for the high-risk loans. Hence, this model may be used to assess the credit risk bit it is still not a good predictor.
 
-Out of these two classifiers, in Easy Ensemble Classifier, the recall for both high-risk loans
-	  and the low-risk loans is very high. Although F1 score is 0.16, but it is better than all the 
-	  above models for the high-risk loans. Hence, this model may be used to assess the credit risk 
-	  bit it is still not a good predictor. 
