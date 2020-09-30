@@ -17,6 +17,8 @@ Credit risk is an inherently unbalanced classification problem, as the number of
   and evaluate models with unbalanced classes. The following techniques have been used in this analysis
   to access the credit risk, using data from LendingClub; a peer-to-peer lending services company.
 
+![alt text](images/comparison.png)
+
 ## Oversampling the data using the RandomOverSampler and SMOTE algorithms
 
 ### Naive Random Oversampling
