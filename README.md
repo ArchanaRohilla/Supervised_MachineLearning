@@ -44,13 +44,17 @@ As per the analysis, these Oversampling models  are not suitable for accessing t
 
 ![alt text](https://github.com/ArchanaRohilla/Supervised_MachineLearning/blob/master/images/random_sampler.png)
 
+The accuracy score is 0.53 which means that the model is correct 53% of the time. From the imbalanced classification report, the precision is 1 for low-risk(majority class) and 0.01 for high-risk(minority class) loans which is not a good value to rely upon. The recall for high-risk loans is greater than the low-risk loans but F1 score is very poor for the high-risk loans. Hence, this model is also not a good predictor to assess the credit risk.
+
 As per the analysis, cluster centroids algorithm is also not suitable for accessing the 
 	  credit risk.
 
-## Use a combination approach with the SMOTEENN algorithm.
+## Use a Combination (Over and Under) Sampling approach with the SMOTEENN algorithm.
 ### Classication Report
 
 ![alt text](https://github.com/ArchanaRohilla/Supervised_MachineLearning/blob/master/images/random_sampler.png)
+
+The accuracy score is 0.65 which means that the model is correct 65% of the time. From the imbalanced classification report, the precision is 1 for low-risk(majority class) and 0.01 for high-risk(minority class) loans which is not a good value to rely upon. The recall for high-risk loans is greater than the low-risk loans but F1 score is still very poor for the high-risk loans. Hence, this model is also not a good predictor to assess the credit risk. But this model is better in terms of recall as compared to the above models. This model may be used if we give more weightage to the recall for high-risk loans.
 
 This model is also not a good predictor to assess the credit risk. But this model is
 	  better in terms of recall as compared to the above models. This model may be used if we give 
